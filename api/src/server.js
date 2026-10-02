@@ -5,8 +5,9 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.json({
-      message: "API Load Balancer is running"
-        });
+      message: "API Load Balancer is running",
+      instance: PORT
+    });
         });
 
         app.get("/health", (req, res) => {
